@@ -5,11 +5,10 @@ const Card = ({ liters, maxLiters, tenant, room, bill }) => {
   const percentage = (liters / maxLiters) * 100;
 
   return (
-    // Cards container with responsive flex layout
     <div className="bg-white p-4 rounded-lg shadow-md flex flex-col md:flex-row items-center md:space-x-4 space-y-4 md:space-y-0 dark:bg-gray-800">
       
       {/* Meter container */}
-      <div className="flex-1">
+      <div className="flex-2">
         <div className="w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-48 lg:h-48">
           <CircularProgressbar
             value={percentage}
@@ -33,7 +32,7 @@ const Card = ({ liters, maxLiters, tenant, room, bill }) => {
           </div>
 
           <div className="mb-2 p-2 bg-gray-50 dark:bg-gray-800 rounded-md">
-            <p className="text-xs sm:text-sm lg:text-base xl:text-lg">Room: {room}</p>
+            <p className="text-xs sm:text-sm lg:text-base xl:text-lg">Unit: {room}</p>
           </div>
 
           <div className="p-2 bg-gray-50 dark:bg-gray-800 rounded-md">

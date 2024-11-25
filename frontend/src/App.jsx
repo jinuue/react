@@ -1,5 +1,4 @@
 // import { useState } from "react";
-import tenantData from './data/tenantData' //huh
 import Dashboard from './components/Dashboard'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
