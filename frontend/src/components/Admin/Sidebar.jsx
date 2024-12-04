@@ -5,9 +5,9 @@ import { IoLogOutSharp } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 
 const menuOptions = [
-    {icon: <MdDashboardCustomize/>, label: "Dashboard", link: "/admin"},
-    {icon: <FaFaucetDrip/>, label: "Valve Settings", link: "/valve"},
-    {icon: <BsDatabaseFillAdd/>, label: "Rate Settings", link:"/rate"}
+    {icon: <MdDashboardCustomize/>, label: "Dashboard", link: "/admin-dashboard"},
+    {icon: <FaFaucetDrip/>, label: "Valve Settings", link: "/valve-settings"},
+    {icon: <BsDatabaseFillAdd/>, label: "Rate Settings", link:"/rate-settings"}
 ];
 
 const Sidebar = () => {

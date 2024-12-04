@@ -1,7 +1,7 @@
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-const Card = ({ liters, maxLiters, tenant, room, bill }) => {
+const TCard = ({ liters, maxLiters, tenant, room, bill }) => {
   const percentage = (liters / maxLiters) * 100;
 
   return (
@@ -45,4 +45,4 @@ const Card = ({ liters, maxLiters, tenant, room, bill }) => {
   );
 };
 
-export default Card;
+export default TCard;

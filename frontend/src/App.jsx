@@ -1,8 +1,11 @@
 // import { useState } from "react";
-import Dashboard from './components/Dashboard'
-import Navbar from './components/Navbar'
-import Sidebar from './components/Sidebar'
+import Dashboard from './pages/Admin/Dashboard'
+import Valve from './pages/Admin/Valve'
+import Rate from './pages/Admin/Rate'
+import Navbar from './components/Admin/Navbar'
+import Sidebar from './components/Admin/Sidebar'
 import ThemeContextProvider from './context/ThemeContextProvider'
+
 
 function App() {
   
@@ -16,6 +19,12 @@ function App() {
         <Navbar />
         <div>
           <Dashboard />
+        </div>
+        <div>
+          <Valve/>
+        </div>
+        <div>
+          <Rate/>
         </div>
       </div>
     </div>
