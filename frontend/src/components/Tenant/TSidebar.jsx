@@ -5,7 +5,7 @@ import { IoLogOutSharp } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 
 const menuOptions = [
-    {icon: <MdDashboardCustomize/>, label: "Live Feed", link: "/"},
+    {icon: <MdDashboardCustomize/>, label: "Live Feed", link: "/live-feed"},
     {icon: <FaFaucetDrip/>, label: "Current Bill", link: "/"},
     {icon: <BsDatabaseFillAdd/>, label: "Historic Feed", link:"/"}
 ];

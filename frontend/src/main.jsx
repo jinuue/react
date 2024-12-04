@@ -7,10 +7,11 @@ import Valve from './pages/Admin/Valve.jsx'
 import Rate from './pages/Admin/Rate.jsx'
 import TSidebar from './components/Tenant/TSidebar.jsx'
 import Dashboard from './pages/Admin/Dashboard.jsx'
+import Livefeed from './pages/Tenant/Livefeed.jsx'
 
 const router = createBrowserRouter([
   {
-    path: "/admin-dashboard",
+    path: "/",
     element: <Dashboard/>
   },
   {
@@ -22,8 +23,8 @@ const router = createBrowserRouter([
     element: <Rate/>
   },
   {
-    path: "/homepage",
-    element: <TSidebar/>
+    path: "/live-feed",
+    element: <Livefeed/>
   },
 
 ])

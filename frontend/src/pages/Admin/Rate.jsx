@@ -15,26 +15,24 @@ function Rate() {
 
   const handleInputChange = (e) => {
     const inputValue = e.target.value;
-    console.log("Input Value: ", inputValue);  // Check input value
+    console.log("Input Value: ", inputValue); 
     if (inputValue === "" || /^[0-9]+(\.[0-9]+)?$/.test(inputValue)) {
       setValuePerM3(inputValue);
     }
   };
 
   const calculateSamples = () => {
-    console.log("Rate Type:", rateType); // Check if rateType is correct
-    console.log("Input Value per m³:", valuePerM3); // Debugging input value
+    console.log("Rate Type:", rateType); 
+    console.log("Input Value per m³:", valuePerM3); 
 
-    // Ensure valuePerM3 is a valid number before proceeding
     const parsedValuePerM3 = parseFloat(valuePerM3);
 
-    // Check if parsedValuePerM3 is valid
+
     if (isNaN(parsedValuePerM3)) {
       console.log("Invalid valuePerM3:", parsedValuePerM3);
-      return ["Enter a valid value"];  // Return a fallback message
+      return ["Enter a valid value"]; 
     }
 
-    // Maynilad Rate
     if (rateType === "maynilad") {
       return [
         { volume: 0.9, price: 130.57 },
@@ -43,7 +41,6 @@ function Rate() {
       ];
     }
 
-    // Step Pricing Logic
     if (rateType === "step_pricing") {
       const rates = [
         { volume: 0.9, price: parsedValuePerM3 },
@@ -54,7 +51,6 @@ function Rate() {
       return rates;
     }
 
-    // Linear Pricing Logic
     if (rateType === "linear") {
       const result = [
         { volume: 0.9, price: 0.9 * parsedValuePerM3 },
@@ -64,7 +60,6 @@ function Rate() {
       return result;
     }
 
-    // Default case (fallback to linear)
     return [
       { volume: 0.9, price: 0.9 * parsedValuePerM3 },
       { volume: 1.4, price: 1.4 * parsedValuePerM3 },
@@ -73,8 +68,8 @@ function Rate() {
   };
 
   useEffect(() => {
-    console.log("Samples: ", calculateSamples()); // Debugging
-  }, [rateType, valuePerM3]); // Trigger recalculation on rateType or valuePerM3 change
+    console.log("Samples: ", calculateSamples()); 
+  }, [rateType, valuePerM3]); 
 
   return (
     <ThemeContextProvider>

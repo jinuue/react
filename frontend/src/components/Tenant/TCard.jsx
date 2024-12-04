@@ -1,7 +1,7 @@
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-const TCard = ({ liters, maxLiters, tenant, room, bill }) => {
+const TCard = ({ liters, maxLiters, bill }) => {
   const percentage = (liters / maxLiters) * 100;
 
   return (
@@ -26,14 +26,6 @@ const TCard = ({ liters, maxLiters, tenant, room, bill }) => {
       {/* Tenant info container */}
       <div className="flex-1 w-full md:w-auto ml-0 md:ml-2 p-3 bg-gray-200 dark:bg-gray-700 rounded-md">
         <div className="m-0">
-
-          <div className="mb-2 rounded-md text-center">
-            <p className="text-xs sm:text-sm lg:text-base xl:text-lg font-bold text-blue-400 uppercase">{tenant}</p>
-          </div>
-
-          <div className="mb-2 p-2 bg-gray-50 dark:bg-gray-800 rounded-md">
-            <p className="text-xs sm:text-sm lg:text-base xl:text-lg">Unit: {room}</p>
-          </div>
 
           <div className="p-2 bg-gray-50 dark:bg-gray-800 rounded-md">
             <p className="text-xs sm:text-sm lg:text-base xl:text-lg">Bill: ₱{bill}</p>
