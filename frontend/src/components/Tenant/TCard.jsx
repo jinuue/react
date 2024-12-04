@@ -23,7 +23,6 @@ const TCard = ({ liters, maxLiters, bill }) => {
         </div>
       </div>
 
-      {/* Tenant info container */}
       <div className="flex-1 w-full md:w-auto ml-0 md:ml-2 p-3 bg-gray-200 dark:bg-gray-700 rounded-md">
         <div className="m-0">
 

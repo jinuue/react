@@ -23,22 +23,18 @@ const Card = ({ liters, maxLiters, tenant, room, bill, dueDate }) => {
         </div>
       </div>
 
-      {/* Tenant info container */}
       <div className="flex-auto w-full md:w-auto ml-0 md:ml-2 p-3 rounded-md">
         <div className="m-0">
 
-          {/* Tenant and Room in a single row */}
           <div className="flex justify-between items-center mb-2 rounded-md">
             <p className="text-xs sm:text-sm lg:text-base xl:text-lg font-bold text-blue-400 uppercase">{tenant}</p>
             <p className="text-gray-400 font-medium text-xs sm:text-sm lg:text-sm xl:text-base uppercase">Unit: {room}</p>
           </div>
 
-          {/* Bill */}
           <div className="mb-2 p-2 bg-gray-100 dark:bg-gray-800 rounded-md dark:border dark:border-gray-700">
             <p className="text-xs sm:text-sm lg:text-base xl:text-lg">Bill: ₱{bill}</p>
           </div>
 
-          {/* Payment Due */}
           <div className="p-2 bg-gray-100 dark:bg-gray-800 rounded-md dark:border dark:border-gray-700">
             <p className="text-xs sm:text-sm lg:text-base xl:text-lg">Payment Due: {dueDate}</p>
           </div>
