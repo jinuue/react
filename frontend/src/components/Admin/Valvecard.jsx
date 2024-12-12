@@ -1,7 +1,7 @@
 import { LiaToggleOnSolid, LiaToggleOffSolid } from "react-icons/lia";
 import { useState } from "react";
 
-const Valvecard = ({ tenant, room }) => {
+const Valvecard = () => {
   const [isToggled, setIsToggled] = useState(true);
 
   const handleToggleClick = () => {
@@ -13,13 +13,13 @@ const Valvecard = ({ tenant, room }) => {
 
       <div className="text-left flex-1">
         <p className="text-base font-semibold text-blue-500 uppercase dark:text-blue-400">
-          {tenant}
+          Tenant
         </p>
       </div>
 
       <div className="flex items-center space-x-0">
         <p className="text-xs dark:text-white text-gray-500">
-          Unit: {room}
+          Unit: #
         </p>
 
         <div

@@ -1,7 +1,11 @@
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
+import { useState } from 'react';
 
-const Card = ({ liters, maxLiters, tenant, room, bill, dueDate }) => {
+
+const Card = () => {
+  const [liters] = useState("╥﹏╥");
+  const [maxLiters] = useState(100);
+  
   const percentage = (liters / maxLiters) * 100;
 
   return (
@@ -14,7 +18,7 @@ const Card = ({ liters, maxLiters, tenant, room, bill, dueDate }) => {
             value={percentage}
             text={`${liters} L`}
             styles={buildStyles({
-              textSize: '1.5rem',
+              textSize: '1rem',
               pathColor: '#3b82f6',
               textColor: '#3b82f6',
               trailColor: '#d6d6d6',
@@ -27,16 +31,16 @@ const Card = ({ liters, maxLiters, tenant, room, bill, dueDate }) => {
         <div className="m-0">
 
           <div className="flex justify-between items-center mb-2 rounded-md">
-            <p className="text-xs sm:text-sm lg:text-base xl:text-lg font-bold text-blue-400 uppercase">{tenant}</p>
-            <p className="text-gray-400 font-medium text-xs sm:text-sm lg:text-sm xl:text-base uppercase">Unit: {room}</p>
+            <p className="text-xs sm:text-sm lg:text-base xl:text-lg font-bold text-blue-400 uppercase">Tenant</p>
+            <p className="text-gray-400 font-medium text-xs sm:text-sm lg:text-sm xl:text-base uppercase">Unit: #</p>
           </div>
 
           <div className="mb-2 p-2 bg-gray-100 dark:bg-gray-800 rounded-md dark:border dark:border-gray-700">
-            <p className="text-xs sm:text-sm lg:text-base xl:text-lg">Bill: ₱{bill}</p>
+            <p className="text-xs sm:text-sm lg:text-base xl:text-lg">Bill: ₱</p>
           </div>
 
           <div className="p-2 bg-gray-100 dark:bg-gray-800 rounded-md dark:border dark:border-gray-700">
-            <p className="text-xs sm:text-sm lg:text-base xl:text-lg">Payment Due: {dueDate}</p>
+            <p className="text-xs sm:text-sm lg:text-base xl:text-lg">Payment Due: </p>
           </div>
 
         </div>

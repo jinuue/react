@@ -1,13 +1,13 @@
-import { MdDashboardCustomize } from 'react-icons/md'
-import { FaFaucetDrip } from 'react-icons/fa6'
-import { BsDatabaseFillAdd } from 'react-icons/bs'
+import { SiRainmeter   } from 'react-icons/si'
+import { ImHistory    } from 'react-icons/im'
+import { BiSolidCoinStack   } from 'react-icons/bi'
 import { IoLogOutSharp } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 
 const menuOptions = [
-    {icon: <MdDashboardCustomize/>, label: "Live Feed", link: "/live-feed"},
-    {icon: <FaFaucetDrip/>, label: "Current Bill", link: "/"},
-    {icon: <BsDatabaseFillAdd/>, label: "Historic Feed", link:"/"}
+    {icon: <SiRainmeter  />, label: "Live Feed", link: "/live-feed"},
+    {icon: <ImHistory  />, label: "Historic Feed", link:"/historic-feed"},
+    {icon: <BiSolidCoinStack  />, label: "Current Bill", link: "/current-bill"}
 ];
 
 const TSidebar = () => {

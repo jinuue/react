@@ -12,11 +12,11 @@ const TNavbar = () => {
       {location.pathname === "/live-feed" && (
         <h1 className="text-base font-semibold sm:block md:hidden">Live Feed</h1>
       )}
-      {location.pathname === "/current-Bill" && (
-        <h1 className="text-base font-semibold sm:block md:hidden"></h1>
-      )}
       {location.pathname === "/historic-feed" && (
-        <h1 className="text-base font-semibold sm:block md:hidden"></h1>
+        <h1 className="text-base font-semibold sm:block md:hidden">Historic Feed</h1>
+      )}
+      {location.pathname === "/current-bill" && (
+        <h1 className="text-base font-semibold sm:block md:hidden">Current Bill</h1>
       )}
       
       <button
