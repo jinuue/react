@@ -22,7 +22,7 @@ const MonthCard = ({ month, onCloseInvoice }) => {
         <div className="flex space-x-6">
           <button
             onClick={showInvoice ? handleCloseInvoice : handleViewInvoice} 
-            className="flex items-center text-white hover:text-blue-700 p-2 rounded-full transition duration-300"
+            className="flex items-center dark:text-white hover:text-blue-700 p-2 rounded-full transition duration-300"
             aria-label={showInvoice ? "Close" : "View Invoice"}
           >
             {showInvoice ? (
