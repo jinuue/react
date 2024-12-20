@@ -8,7 +8,7 @@ const TCard = ({ liters = 0, maxLiters = 100 }) => {
     <div className="bg-white p-4 rounded-md flex flex-col md:flex-row items-center md:space-x-4 space-y-4 md:space-y-0 dark:bg-gray-800 dark:border dark:border-gray-700">
       {/* Meter container */}
       <div className="flex-2">
-        <div className="w-48 h-48 sm:w-48 sm:h- md:w-48 md:h-48 lg:w-48 lg:h-48 xl:w-64 xl:h-64">
+        <div className="w-48 h-48 sm:w-48 sm:h- md:w-48 md:h-48 lg:w-48 lg:h-48 xl:w-64 xl:h-64 ">
           <CircularProgressbar
             value={percentage}
             text={`${liters} L`}

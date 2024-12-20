@@ -35,14 +35,14 @@ const TSidebar = () => {
             <li key={index} className="flex items-center">
               <Link
                 to={option.link}
-                className="flex items-center w-full py-3 px-2 space-x-4 stroke-gray900 hover:rounded hover:cursor-pointer hover:bg-blue-500 hover:text-white"
+                className="flex items-center w-full py-3 px-2 space-x-4 stroke-gray900 hover:rounded hover:cursor-pointer hover:bg-blue-700 hover:text-white"
               >
                 {option.icon}
                 <span className="hidden md:inline">{option.label}</span>
               </Link>
             </li>
           ))}
-            <li className="flex items-center w-full py-3 px-2 mt-auto space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-900 hover:text-white mb-5 mt-6 border-t border-gray-300 dark:border-gray-600">
+            <li className="flex items-center w-full py-3 px-2 space-x-4 hover:rounded hover:cursor-pointer hover:bg-blue-700 hover:text-white mb-5 mt-6 border-t border-gray-300 dark:border-gray-600">
               <IoLogOutSharp />
               <span className="hidden md:inline">Logout</span>
             </li>
