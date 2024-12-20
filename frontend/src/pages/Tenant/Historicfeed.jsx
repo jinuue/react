@@ -1,5 +1,5 @@
 import { useState } from "react";
-import MonthCard from "../../components/Tenant/MonthCard"; // Import the MonthCard component
+import MonthCard from "../../components/Tenant/MonthCard";
 import TNavbar from "../../components/Tenant/TNavbar";
 import TSidebar from "../../components/Tenant/TSidebar";
 import ThemeContextProvider from "../../context/ThemeContextProvider";
