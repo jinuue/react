@@ -17,19 +17,17 @@ const Historicfeed = () => {
 
   return (
     <ThemeContextProvider>
-      <div className="min-h-screen min-w-full bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white flex flex-col">
-        <div className="flex flex-1">
-          <TSidebar />
-          <div className="grow ml-16 md:ml-64">
-            <TNavbar />
+      <div className="flex min-h-screen min-w-full bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
+        <TSidebar />
+        <div className="flex-1 ml-16 md:ml-64 overflow-hidden">
+          <TNavbar />
 
-            <div className="flex flex-col items-center p-4">
-              <MonthCard
-                visibleInvoice={visibleInvoice}
-                onViewInvoice={handleViewInvoice}
-                onCloseInvoice={handleCloseInvoice}
-              />
-            </div>
+          <div className="flex flex-col items-center p-4 overflow-auto">
+            <MonthCard
+              visibleInvoice={visibleInvoice}
+              onViewInvoice={handleViewInvoice}
+              onCloseInvoice={handleCloseInvoice}
+            />
           </div>
         </div>
       </div>

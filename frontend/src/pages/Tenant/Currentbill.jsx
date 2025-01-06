@@ -6,9 +6,9 @@ import CurrentInvoice from "../../components/Tenant/CurrentInvoice";
 const Currentbill = () => {
   return (
     <ThemeContextProvider>
-      <div className="flex">
+      <div className="flex min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
         <TSidebar />
-        <div className="grow ml-16 md:ml-64 h-full lg:h-screen bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
+        <div className="grow ml-16 md:ml-64 h-full">
           <TNavbar />
           <CurrentInvoice />
         </div>
