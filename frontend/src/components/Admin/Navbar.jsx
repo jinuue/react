@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-gray-100 text-gray-900 border-b border-gray-300 p-4 flex justify-between items-center dark:border-gray-600 dark:bg-gray-900 dark:text-white pl-8">
-      {location.pathname === "/admin-dashboard" && (
+      {location.pathname === "/" && (
         <h1 className="text-base font-semibold sm:block md:hidden">Dashboard</h1>
       )}
       {location.pathname === "/valve-settings" && (
