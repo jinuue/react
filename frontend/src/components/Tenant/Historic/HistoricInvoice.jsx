@@ -2,7 +2,7 @@ const HistoricInvoice = () => {
   return (
     <div className="font-sans dark:bg-gray-900 text-gray-100 h-auto bg-cover">
       <div className="flex justify-center">
-        <div className="w-full max-w-4xl dark:bg-gray-800 dark:border dark:border-gray-700 text-gray-800 shadow-md p-3 ">
+        <div className="w-full max-w-5xl dark:bg-gray-800 dark:border dark:border-gray-700 text-gray-800 shadow-md p-3 ">
           <div className="flex justify-between text-xs sm:text-sm">
             <div className="dark:text-gray-200 font-semibold">
               <p><strong>Reference # :</strong> <span id="ref-CB">loading...</span></p>
