@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
+import Login from './pages/Login.jsx'
 import Valve from './pages/Admin/Valve.jsx'
 import Rate from './pages/Admin/Rate.jsx'
 import Dashboard from './pages/Admin/Dashboard.jsx'
@@ -9,7 +10,11 @@ import Livefeed from './pages/Tenant/Livefeed.jsx'
 import Historicfeed from './pages/Tenant/Historicfeed.jsx'
 import Currentbill from './pages/Tenant/Currentbill.jsx'
 
-const router = createBrowserRouter([
+const router = createBrowserRouter([ 
+  {
+    path: "/hydrowatch-login",
+    element: <Login/>
+  },
   {
     path: "/",
     element: <Dashboard/>

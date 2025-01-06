@@ -9,7 +9,7 @@ const Card = () => {
   const percentage = (liters / maxLiters) * 100;
 
   return (
-    <div className="bg-white p-4 rounded-md flex flex-col md:flex-row items-center md:space-x-4 space-y-4 md:space-y-0 dark:bg-gray-800 dark:border dark:border-gray-700">
+    <div className="bg-white p-4 shadow-lg rounded-md flex flex-col md:flex-row items-center md:space-x-4 space-y-4 md:space-y-0 dark:bg-gray-800 dark:border dark:border-gray-700">
       
       {/* Meter container */}
       <div className="flex-2">

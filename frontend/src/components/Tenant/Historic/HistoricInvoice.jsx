@@ -1,4 +1,4 @@
-const InvoiceContent = () => {
+const HistoricInvoice = () => {
     return (
       <div className="p-8 font-sans dark:bg-gray-900 text-gray-100 h-screen bg-cover">
         <div className="flex justify-center">
@@ -69,5 +69,5 @@ const InvoiceContent = () => {
     );
   };
   
-  export default InvoiceContent;
+  export default HistoricInvoice;
   

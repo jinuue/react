@@ -55,7 +55,7 @@ const Rate = () => {
                         e.preventDefault(); 
                       }
                     }}
-                    className="w-full mt-2 px-3 py-2 border rounded-lg dark:bg-gray-700 dark:border-gray-600"
+                    className="w-full mt-2 px-3 py-2 border rounded-lg bg-gray-100 dark:bg-gray-700 dark:border-gray-600"
                     step="0.01" 
                   />
 
